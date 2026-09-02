@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { Clock, ArrowRight } from "lucide-react";
@@ -29,20 +29,20 @@ export default function Blog() {
   ];
 
   return (
-    <section id="health-tips" className="py-24 bg-gradient-to-t from-white to-blue-50/30 dark:bg-zinc-900 font-sans relative overflow-hidden">
+    <section id="health-tips" className="py-24 bg-gradient-to-t from-white via-blue-50/30 to-sky-50/30 dark:bg-zinc-900 font-sans relative overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold uppercase tracking-wider text-teal-600 dark:text-teal-400 bg-teal-50 dark:bg-teal-900/20 px-3 py-1.5 rounded-md">
+          <span className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 px-3 py-1.5 rounded-md">
             Health Awareness
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-800 dark:text-white mt-4 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-blue-950 dark:text-white mt-4 tracking-tight">
             Latest Health Tips &amp; Medical Insights
           </h2>
-          <div className="h-1 w-20 bg-teal-500 mx-auto mt-4 rounded-full" />
+          <div className="h-1 w-20 bg-gradient-to-r from-blue-600 to-sky-400 mx-auto mt-4 rounded-full" />
           <p className="text-gray-500 dark:text-zinc-400 mt-4 text-sm sm:text-base">
-            Empowering our community in Anantapur with practical guidelines on bone health, injury avoidance, and recovery routines.
+            Empowering our community in Visakhapatnam with practical guidelines on bone health, injury avoidance, and recovery routines.
           </p>
         </div>
 
@@ -55,12 +55,12 @@ export default function Blog() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="bg-gray-50 dark:bg-zinc-850 rounded-2xl border border-gray-150 dark:border-zinc-800/80 p-6 flex flex-col justify-between hover:shadow-md hover:border-teal-500/10 transition-all duration-300 group"
+              className="bg-white/80 dark:bg-zinc-850 rounded-2xl border border-blue-100 dark:border-zinc-800/80 p-6 flex flex-col justify-between hover:shadow-lg hover:border-blue-300 transition-all duration-300 group"
             >
               <div>
                 {/* Meta details */}
                 <div className="flex items-center justify-between gap-2 mb-4 text-xs font-bold">
-                  <span className="text-teal-600 dark:text-teal-400 uppercase tracking-wider">
+                  <span className="text-blue-600 dark:text-blue-400 uppercase tracking-wider">
                     {post.category}
                   </span>
                   <div className="flex items-center gap-1 text-gray-400 font-medium">
@@ -70,7 +70,7 @@ export default function Blog() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-lg font-bold text-navy-800 dark:text-white mb-3 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors leading-snug">
+                <h3 className="text-lg font-bold text-blue-950 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors leading-snug">
                   {post.title}
                 </h3>
 
@@ -83,7 +83,7 @@ export default function Blog() {
               {/* Read button / Date */}
               <div className="border-t border-gray-200/50 dark:border-zinc-800/60 pt-4 flex items-center justify-between text-xs mt-auto">
                 <span className="text-gray-400 font-medium">{post.date}</span>
-                <span className="inline-flex items-center gap-1 font-bold text-navy-700 dark:text-zinc-300 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                <span className="inline-flex items-center gap-1 font-bold text-blue-900 dark:text-zinc-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   <span>Read Article</span>
                   <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
                 </span>
@@ -97,7 +97,7 @@ export default function Blog() {
         <div className="text-center mt-12">
           <p className="text-sm text-gray-500 dark:text-zinc-400">
             Need customized wellness guidelines or physical training advice?{" "}
-            <a href="#contact" className="text-teal-600 dark:text-teal-400 font-bold hover:underline">
+            <a href="#contact" className="text-blue-600 dark:text-blue-400 font-bold hover:underline">
               Speak to our physiotherapists.
             </a>
           </p>

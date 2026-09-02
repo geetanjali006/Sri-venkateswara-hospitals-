@@ -28,7 +28,7 @@ export default function FAQ({ data }: FAQProps) {
 
           {/* Left Column: Header and Description */}
           <div className="lg:col-span-5">
-            <h2 className="text-4xl lg:text-[44px] font-sans text-gray-900 dark:text-white font-medium tracking-tight leading-[1.15] mb-6">
+            <h2 className="text-4xl lg:text-[44px] font-sans text-blue-950 dark:text-white font-medium tracking-tight leading-[1.15] mb-6">
               {data.headline.split(' ').map((word: string, i: number, arr: string[]) => (
                 <span key={i}>
                   {word}{i === 0 && <br className="hidden lg:block" />}{' '}
@@ -39,26 +39,26 @@ export default function FAQ({ data }: FAQProps) {
           </div>
 
           {/* Right Column: Minimalist Accordion */}
-          <div className="lg:col-span-7 border-t border-gray-200 dark:border-zinc-800">
+          <div className="lg:col-span-7 border-t border-blue-100 dark:border-zinc-800">
             <div className="flex flex-col">
               {faqs.map((faq: any, idx: number) => {
                 const isOpen = activeIndex === idx;
                 return (
                   <div
                     key={idx}
-                    className="border-b border-gray-200 dark:border-zinc-800"
+                    className="border-b border-blue-100 dark:border-zinc-800"
                   >
                     <button
                       onClick={() => toggleFAQ(idx)}
                       className="w-full flex items-center justify-between py-6 text-left group"
                     >
-                      <span className="text-[14px] font-semibold text-gray-900 dark:text-zinc-200 group-hover:text-blue-600 transition-colors pr-8">
+                      <span className="text-[14px] font-semibold text-blue-950 dark:text-zinc-200 group-hover:text-blue-600 transition-colors pr-8">
                         {faq.q}
                       </span>
                       <ChevronDown
                         className={cn(
                           "h-4 w-4 text-gray-400 dark:text-zinc-500 transition-transform duration-300 flex-shrink-0",
-                          isOpen && "rotate-180"
+                          isOpen && "rotate-180 text-blue-600"
                         )}
                       />
                     </button>

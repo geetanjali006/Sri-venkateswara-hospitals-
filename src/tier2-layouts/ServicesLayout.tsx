@@ -29,11 +29,11 @@ export default function Services({ onOpenBooking, data }: ServicesProps) {
 
         {/* Section Header */}
         <div className="text-center mb-20 flex flex-col items-center px-4">
-          <span className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-[#6B7280] mb-6">
+          <span className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-blue-600 bg-blue-50 dark:bg-blue-900/20 px-3 py-1.5 rounded-full font-bold mb-6">
             {data.badge}
           </span>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-serif text-[#111111] tracking-tight leading-[1.05] max-w-5xl text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-serif text-blue-950 dark:text-white tracking-tight leading-[1.05] max-w-5xl text-center">
             {data.headline}
           </h2>
         </div>
@@ -52,7 +52,7 @@ export default function Services({ onOpenBooking, data }: ServicesProps) {
                   duration: 0.4,
                   delay: idx * 0.05,
                 }}
-                className="group relative h-[320px] sm:h-[360px] rounded-[32px] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col justify-end p-6"
+                className="group relative h-[320px] sm:h-[360px] rounded-[32px] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col justify-end p-6 border border-blue-50/50"
               >
                 {/* Background Image */}
                 <div 
@@ -61,7 +61,7 @@ export default function Services({ onOpenBooking, data }: ServicesProps) {
                 />
                 
                 {/* Dark Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent z-10" />
 
                 {/* Content */}
                 <div className="relative z-20 flex flex-col items-start w-full">
@@ -78,14 +78,15 @@ export default function Services({ onOpenBooking, data }: ServicesProps) {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-20 w-full bg-[#B24E39] rounded-[28px] sm:rounded-[36px] p-12 sm:p-16 lg:p-24 flex flex-col items-center justify-center text-center shadow-xl">
-          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-white max-w-4xl leading-[1.1] mb-10 tracking-tight">
+        <div className="mt-20 w-full bg-gradient-to-r from-blue-700 via-blue-600 to-sky-600 rounded-[28px] sm:rounded-[36px] p-12 sm:p-16 lg:p-24 flex flex-col items-center justify-center text-center shadow-xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl pointer-events-none" />
+          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-white max-w-4xl leading-[1.1] mb-10 tracking-tight relative z-10">
             {data.ctaHeadline}
           </h3>
 
           <button
             onClick={onOpenBooking}
-            className="bg-white text-[#B24E39] hover:bg-[#F5F5F5] font-semibold text-sm px-7 py-3 rounded-xl transition-all duration-300 shadow-sm"
+            className="bg-white text-blue-950 hover:bg-blue-50 font-bold text-sm px-8 py-3.5 rounded-xl transition-all duration-300 shadow-md hover:scale-105 relative z-10"
           >
             {data.ctaButton}
           </button>

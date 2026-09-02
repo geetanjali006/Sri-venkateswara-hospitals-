@@ -13,7 +13,7 @@ export default function AppointmentBooking({ data }: BookingProps) {
     name: "",
     phone: "",
     department: "Orthopedics",
-    doctor: "Dr. Y. M. V. Kumar",
+    doctor: "Dr. S. V. Rao",
     date: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -41,7 +41,7 @@ export default function AppointmentBooking({ data }: BookingProps) {
       name: "",
       phone: "",
       department: "Orthopedics",
-      doctor: "Dr. Y. M. V. Kumar",
+      doctor: "Dr. S. V. Rao",
       date: "",
     });
     setIsSuccess(false);
@@ -147,10 +147,9 @@ export default function AppointmentBooking({ data }: BookingProps) {
                         onChange={(e) => setFormData({ ...formData, doctor: e.target.value })}
                         className="w-full rounded-xl border border-gray-200 bg-white text-gray-900 dark:bg-zinc-800 dark:text-white dark:border-zinc-700 py-3 pl-10 pr-4 text-sm outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-100 appearance-none"
                       >
-                        <option value="Dr. Y. M. V. Kumar" className="bg-white text-gray-900 dark:bg-zinc-800 dark:text-white">Dr. Y. M. V. Kumar (Orthopedics)</option>
+                        <option value="Dr. S. V. Rao" className="bg-white text-gray-900 dark:bg-zinc-800 dark:text-white">Dr. S. V. Rao (Orthopedics)</option>
                         <option value="Dr. V. Karthik Reddy" className="bg-white text-gray-900 dark:bg-zinc-800 dark:text-white">Dr. V. Karthik Reddy (General Medicine)</option>
-                        <option value="Dr. A. Mithun Rakesh" className="bg-white text-gray-900 dark:bg-zinc-800 dark:text-white">Dr. A. Mithun Rakesh (General Medicine)</option>
-                        <option value="Dr. K. Karun Kumar Reddy" className="bg-white text-gray-900 dark:bg-zinc-800 dark:text-white">Dr. K. Karun Kumar Reddy (General Surgery)</option>
+                        <option value="Dr. K. Karunakar Reddy" className="bg-white text-gray-900 dark:bg-zinc-800 dark:text-white">Dr. K. Karunakar Reddy (General Surgery)</option>
                         <option value="Dr. Rajashekar Battula" className="bg-white text-gray-900 dark:bg-zinc-800 dark:text-white">Dr. Rajashekar Battula (Urology)</option>
                         <option value="Dr. C. Aruna Jyothi" className="bg-white text-gray-900 dark:bg-zinc-800 dark:text-white">Dr. C. Aruna Jyothi (Gynecology)</option>
                       </select>
@@ -182,7 +181,7 @@ export default function AppointmentBooking({ data }: BookingProps) {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full rounded-xl bg-blue-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-blue-600/20 transition-all hover:bg-blue-700 active:scale-98 disabled:opacity-50 mt-2"
+                  className="w-full rounded-xl bg-gradient-to-r from-blue-600 via-blue-500 to-sky-500 py-3.5 text-sm font-bold text-white shadow-lg shadow-blue-500/20 transition-all hover:from-blue-700 hover:to-sky-600 active:scale-98 disabled:opacity-50 mt-2"
                 >
                   {isSubmitting ? data.form.submittingText : data.form.submitText}
                 </button>
@@ -194,16 +193,16 @@ export default function AppointmentBooking({ data }: BookingProps) {
                 animate={{ opacity: 1, scale: 1 }}
                 className="flex flex-col items-center justify-center py-8 text-center"
               >
-                <div className="mb-4 rounded-full bg-emerald-50 p-4 dark:bg-emerald-950/20 text-emerald-600">
-                  <CheckCircle className="h-12 w-12 text-emerald-600" />
+                <div className="mb-4 rounded-full bg-blue-50 p-4 dark:bg-blue-950/20 text-blue-600">
+                  <CheckCircle className="h-12 w-12 text-blue-600" />
                 </div>
-                <h4 className="text-xl font-extrabold text-[#0B1F3A] mb-2">{data.form.successTitle}</h4>
+                <h4 className="text-xl font-extrabold text-blue-950 dark:text-white mb-2">{data.form.successTitle}</h4>
                 <p className="text-xs text-gray-500 leading-relaxed max-w-xs mb-6">
                   {data.form.successSubtext.replace('{name}', formData.name).replace('{doctor}', formData.doctor).replace('{department}', formData.department).replace('{date}', formData.date)}
                 </p>
                 <button
                   onClick={handleReset}
-                  className="w-full max-w-[200px] rounded-xl bg-[#0B1F3A] py-3 text-sm font-bold text-white transition-all hover:bg-navy-900 active:scale-98"
+                  className="w-full max-w-[200px] rounded-xl bg-gradient-to-r from-blue-600 to-sky-500 py-3 text-sm font-bold text-white transition-all hover:from-blue-700 hover:to-sky-600 active:scale-98 shadow-md"
                 >
                   {data.form.successButton}
                 </button>
@@ -213,10 +212,10 @@ export default function AppointmentBooking({ data }: BookingProps) {
 
           {/* WhatsApp / Trust Right Side */}
           <div className="lg:col-span-5 flex flex-col gap-6 justify-between">
-            <div className="rounded-[32px] bg-gradient-to-br from-[#EAF3FF] to-white p-6 border border-blue-100 shadow-md flex flex-col justify-between flex-1 min-h-[220px]">
+            <div className="rounded-[32px] bg-gradient-to-br from-white via-blue-50/70 to-sky-50 p-6 border border-blue-100 shadow-md flex flex-col justify-between flex-1 min-h-[220px]">
               <div>
                 <span className="text-[10px] font-extrabold text-blue-600 uppercase tracking-widest block mb-2">{data.whatsapp.badge}</span>
-                <h3 className="text-xl font-bold text-[#0B1F3A] mb-3">{data.whatsapp.headline}</h3>
+                <h3 className="text-xl font-bold text-blue-950 mb-3">{data.whatsapp.headline}</h3>
                 <p className="text-xs text-gray-500 leading-relaxed">
                   {data.whatsapp.subtext}
                 </p>
@@ -225,22 +224,18 @@ export default function AppointmentBooking({ data }: BookingProps) {
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                href="https://wa.me/919440275556?text=I%20want%20to%20book%20an%20OPD%20appointment%20with%20Kumar%20Hospital"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-emerald-600/20 hover:bg-emerald-700 transition-all mt-6"
+                href={data.whatsapp.link}
+                className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-sky-500 to-cyan-500 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-sky-500/20 hover:from-sky-600 hover:to-cyan-600 transition-all mt-6"
               >
-                <svg viewBox="0 0 24 24" className="h-4.5 w-4.5 fill-white stroke-none">
-                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.413 9.863-9.847.001-2.63-1.023-5.101-2.885-6.963C16.531 1.932 14.06 .907 11.433.907c-5.434 0-9.858 4.414-9.861 9.848-.001 1.942.507 3.834 1.47 5.514L2.017 21.6l5.522-1.446zM17.472 14.382c-.301-.15-1.78-.879-2.057-.98-.277-.101-.478-.15-.678.15-.199.299-.773.979-.949 1.179-.176.2-.351.224-.652.074-1.022-.512-1.795-.877-2.507-1.492-.562-.487-.887-1.077-.997-1.272-.11-.2-.012-.307.088-.407.089-.09.199-.232.299-.348.101-.115.134-.199.199-.332.066-.133.033-.25-.016-.35-.05-.1-.478-1.15-.655-1.579-.173-.414-.347-.358-.478-.365-.123-.006-.264-.007-.406-.007-.142 0-.374.053-.57.266-.197.213-.753.737-.753 1.798 0 1.06.773 2.083.88 2.233.107.15 1.52 2.32 3.682 3.253.514.223.916.356 1.229.456.518.165.989.141 1.361.086.415-.062 1.78-.727 2.031-1.43.252-.703.252-1.306.176-1.43-.076-.124-.277-.199-.578-.35" />
-                </svg>
+                <Phone className="h-4.5 w-4.5 text-white" />
                 <span>{data.whatsapp.button}</span>
               </motion.a>
             </div>
 
             {/* Corporate Accreditations and Assurances */}
-            <div className="rounded-[32px] border border-gray-150 dark:border-zinc-800 p-6 flex flex-col justify-between bg-[#F8FAFC] dark:bg-zinc-850 shadow-sm flex-1">
+            <div className="rounded-[32px] border border-blue-100 dark:border-zinc-800 p-6 flex flex-col justify-between bg-white/80 dark:bg-zinc-850 shadow-sm flex-1">
               <div>
-                <h4 className="text-xs font-bold text-[#0B1F3A] uppercase tracking-wider mb-3 flex items-center gap-1.5">
+                <h4 className="text-xs font-bold text-blue-950 dark:text-white uppercase tracking-wider mb-3 flex items-center gap-1.5">
                   <ShieldCheck className="h-4.5 w-4.5 text-blue-600" />
                   <span>Clinical Assurances</span>
                 </h4>

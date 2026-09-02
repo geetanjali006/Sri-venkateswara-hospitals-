@@ -1,13 +1,13 @@
 {
   "layout": {
     "seo": {
-      "title": "Kumar's Ortho & Multi-Speciality Hospital",
-      "description": "Advanced orthopedic surgery, trauma care, and multi-speciality healthcare services in Anantapur."
+      "title": "Sri Venkateswara Hospital",
+      "description": "Advanced orthopedic surgery, trauma care, and multi-speciality healthcare services in Visakhapatnam."
     },
     "navbar": {
       "logo": {
-        "title": "KUMAR'S ORTHO",
-        "subtitle": "& CLINIC"
+        "title": "SRI VENKATESWARA",
+        "subtitle": "HOSPITAL"
       },
       "links": [
         {
@@ -36,12 +36,12 @@
         }
       ],
       "actions": {
-        "emergencyText": "EMERGENCY: 08554-245678",
-        "emergencyPhone": "+918554245678",
+        "emergencyText": "EMERGENCY: 0891-2700000",
+        "emergencyPhone": "08912700000",
         "bookAppointmentText": "BOOK APPOINTMENT"
       },
       "mobileActions": {
-        "emergencyText": "Emergency: 08554-245678",
+        "emergencyText": "Emergency: 0891-2700000",
         "bookAppointmentText": "Book Appointment"
       }
     },
@@ -49,7 +49,7 @@
       "headline": "Advanced care. Trusted Healing.",
       "subtext": "Expert orthopedic and multispeciality care with advanced treatment and compassionate support.",
       "cta": "Book Appointment",
-      "emergency": "Emergency: 08554-245678"
+      "emergency": "Emergency: 0891-2700000"
     },
     "services": {
       "badge": "CENTERS OF EXCELLENCE.",
@@ -98,40 +98,58 @@
       "subtext": "Meet our team of senior doctors shaping the future of healthcare.",
       "doctors": [
         {
-          "name": "Dr. A. L. M. V. Kumar",
-          "designation": "Orthopedic & Spine Surgeon",
-          "qualifications": "MBBS, MS (Ortho) | Fellow in Spine Surgery"
+          "name": "Dr. Sarah Jenkins, MD",
+          "designation": "Chief of Cardiology",
+          "specialization": "Cardiovascular Medicine",
+          "expertise": "Angioplasty, Heart Failure, Coronary Care"
         },
         {
-          "name": "Dr. V. Karthik Reddy",
-          "designation": "Consultant Physician",
-          "qualifications": "MBBS, DNB General Medicine"
+          "name": "Dr. Rajesh Kumar, MS",
+          "designation": "Senior Surgeon",
+          "specialization": "Orthopedics & Joint Replacement",
+          "expertise": "Knee/Hip Replacement, Arthroscopy, Trauma"
         },
         {
-          "name": "Dr. A. Mithun Rakesh",
-          "designation": "Consultant Physician",
-          "qualifications": "MBBS, DNB General Medicine"
+          "name": "Dr. Elena Rostova, PhD",
+          "designation": "Department Head",
+          "specialization": "Neurology & Neurosurgery",
+          "expertise": "Brain Tumor Surgery, Stroke Care, Epilepsy"
         },
         {
-          "name": "Dr. K. Karun Kumar Reddy",
-          "designation": "General Surgeon",
-          "qualifications": "MS General Surgery, FIAGES"
+          "name": "Dr. Marcus Vance, MD",
+          "designation": "Lead Pediatrician",
+          "specialization": "Pediatric Care & Neonatology",
+          "expertise": "NICU, Pediatric Intensive Care, Growth Care"
         },
         {
-          "name": "Dr. Rajashekar Battula",
-          "designation": "Consultant Urologist",
-          "qualifications": "MS, MCh (Urology), FMAS"
+          "name": "Dr. Aisha Patel, MD",
+          "designation": "Chief Consultant",
+          "specialization": "Oncology (Cancer Care)",
+          "expertise": "Chemotherapy, Immunotherapy, Tumor Board"
         },
         {
-          "name": "Dr. C. Aruna Jyothi",
-          "designation": "Obstetrics & Gynecology Specialist",
-          "qualifications": "MBBS, MS (OBG)"
+          "name": "Dr. David Miller, MD",
+          "designation": "Clinical Lead",
+          "specialization": "Gastroenterology",
+          "expertise": "Endoscopy, Liver Care, GI Surgery"
+        },
+        {
+          "name": "Dr. Sophia Al-Mansoor",
+          "designation": "Consultant Specialist",
+          "specialization": "Obstetrics & Gynecology",
+          "expertise": "High-risk Pregnancy, Laparoscopic Surgery"
+        },
+        {
+          "name": "Dr. Robert Chen, MD",
+          "designation": "Department Chair",
+          "specialization": "Radiology & Imaging",
+          "expertise": "3T MRI, CT Angiography, Interventional Imaging"
         }
       ],
       "ctaButton": "Book Consult"
     },
     "whyChooseUs": {
-      "headline": "Why Kumar's Ortho Clinic",
+      "headline": "Why Sri Venkateswara Hospital",
       "reasons": [
         {
           "title": "Experienced Specialists",
@@ -201,11 +219,11 @@
         "successButton": "Back to Form"
       },
       "whatsapp": {
-        "badge": "WhatsApp Consultation",
-        "headline": "Book Instantly via WhatsApp",
-        "subtext": "Skip the form entirely! Start an active chat with our scheduling assistant on WhatsApp to book and verify slots instantly.",
-        "button": "Chat & Book Instantly",
-        "link": "https://wa.me/919440275556?text=I%20want%20to%20book%20an%20OPD%20appointment%20with%20Kumar%20Hospital"
+        "badge": "Direct Care Line",
+        "headline": "Book Instantly via Call",
+        "subtext": "Skip the form entirely! Speak directly with our scheduling assistant at our front desk to book and verify slots.",
+        "button": "Call Desk Instantly",
+        "link": "tel:08912700000"
       },
       "assurances": {
         "title": "Clinical Assurances",
@@ -214,16 +232,16 @@
           "Pre-authorization cashless support for listing panels.",
           "Emergency admissions triaged immediately."
         ],
-        "footer": "Apollo Standard Hospital Infrastructure"
+        "footer": "NABH Accredited Hospital Infrastructure"
       }
     },
     "faq": {
       "headline": "Frequently Asked Questions",
-      "subtext": "Common questions about how Kumar's Ortho Clinic works, what's included, and how to get started. If you don't find your answer here, reach out at <a href=\"mailto:contact@kumarhospital.com\" class=\"underline hover:text-gray-900 dark:hover:text-gray-300 transition-colors\">contact@kumarhospital.com</a> and we'll get back to you quickly.",
+      "subtext": "Common questions about how Sri Venkateswara Hospital works, what's included, and how to get started. If you don't find your answer here, reach out at <a href=\"mailto:contact@svhospital.com\" class=\"underline hover:text-gray-900 dark:hover:text-gray-300 transition-colors\">contact@svhospital.com</a> and we'll get back to you quickly.",
       "items": [
         {
-          "q": "How do I book an appointment with Dr. Kumar?",
-          "a": "You can request an appointment by clicking any 'Book Appointment' button on this website and filling out the short form, or by calling our desk directly at 08554-245678 or +91 94402 75556. Once submitted, our coordinator will call you to confirm your exact time slot."
+          "q": "How do I book an appointment with a specialist doctor?",
+          "a": "You can request an appointment by clicking any 'Book Appointment' button on this website and filling out the short form, or by calling our desk directly at 0891-2700000. Once submitted, our coordinator will call you to confirm your exact time slot."
         },
         {
           "q": "What are the hospital consulting hours?",
@@ -231,7 +249,7 @@
         },
         {
           "q": "Does the hospital handle emergency accident cases and fracture surgeries?",
-          "a": "Yes, we are a specialized trauma care center. We have an active trauma surgical team led by Dr. Kumar. Our operating theaters, in-house X-ray facility, diagnostics, and sterile wards are equipped for immediate admission and fracture fixing operations 24/7."
+          "a": "Yes, we are a specialized trauma care center. We have an active trauma surgical team led by senior specialists. Our operating theaters, in-house X-ray facility, diagnostics, and sterile wards are equipped for immediate admission and fracture fixing operations 24/7."
         },
         {
           "q": "Do you offer cashless treatments or accept health insurance?",
@@ -246,19 +264,19 @@
     "contact": {
       "badge": "Locate & Visit Us",
       "headline": "Hospital Location & Directions",
-      "subtext": "Easily navigate to Kumar's Ortho Clinic in Anantapur. Find precise driving directions, parking layout, and quick contact details.",
+      "subtext": "Easily navigate to Sri Venkateswara Hospital in Visakhapatnam. Find precise driving directions, parking layout, and quick contact details.",
       "map": {
-        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.4287895315806!2d77.58552147573031!3d14.660600175628588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb14ab59e219491%3A0x6b19a16f2c79f3cf!2sVidyut%20Nagar%2080%20Feet%20Rd%2C%20Vidyut%20Nagar%2C%20Anantapur%2C%20Andhra%20Pradesh%20515001!5e0!3m2!1sen!2sin!4v1716658000000!5m2!1sen!2sin",
-        "linkUrl": "https://maps.google.com/?q=Vidyut+Nagar+80+Feet+Rd,+Vidyut+Nagar,+Anantapur,+Andhra+Pradesh+515001",
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.882470716447!2d83.30058567580665!3d17.712431692994967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3943343eb25aa7%3A0xe7819fe7efd4f233!2sJagadamba%20Junction%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530002!5e0!3m2!1sen!2sin!4v1716658000000!5m2!1sen!2sin",
+        "linkUrl": "https://maps.google.com/?q=14-1-137,+Nowroji+Rd,+beside+St.anthony+school,+Jagadamba+Junction,+Visakhapatnam,+Andhra+Pradesh+530002",
         "btnText": "Open in Google Maps"
       },
       "addressCard": {
         "title": "Hospital Address",
-        "desc": "Kumar's Ortho Clinic is easily accessible for patients coming from all corners of Anantapur District.",
+        "desc": "Sri Venkateswara Hospital is easily accessible for patients coming from all corners of Visakhapatnam District.",
         "addressLines": [
-          "12-4, 80 Feet Road,",
-          "Vidyuth Nagar, Housing Board Colony,",
-          "Anantapur, Andhra Pradesh - 515001, India"
+          "14-1-137, Nowroji Rd,",
+          "beside St. Anthony School, Jagadamba Junction,",
+          "Visakhapatnam, Andhra Pradesh - 530002, India"
         ],
         "btnText": "Get Driving Directions"
       },
@@ -267,18 +285,18 @@
         "hoursDesc": "Mon - Sat: 9:00 AM - 8:00 PM",
         "hoursEmergency": "Emergency Admissions & Trauma Care: 24/7 Live",
         "phoneTitle": "Direct Helpline Contacts",
-        "phone1Text": "OPD Desk: 08554-245678",
-        "phone1Link": "tel:08554245678",
-        "phone2Text": "Hotline: +91 94402 75556",
-        "phone2Link": "tel:+919440275556",
-        "whatsappBtn": "Chat Instantly on WhatsApp",
-        "whatsappLink": "https://wa.me/919440275556?text=Hi%20Kumar%20Hospital,%20I%27d%20like%20to%20inquire%20about%20your%20services."
+        "phone1Text": "OPD Desk: 0891-2700000",
+        "phone1Link": "tel:08912700000",
+        "phone2Text": "Emergency: 0891-2700000",
+        "phone2Link": "tel:08912700000",
+        "whatsappBtn": "Call Hospital Helpline",
+        "whatsappLink": "tel:08912700000"
       }
     },
     "footer": {
       "brand": {
-        "title": "KUMAR'S ORTHO & Multi-Specality Hospital",
-        "description": "Established in 2021, Kumar's Ortho Clinic is dedicated to delivering state-of-the-art orthopedic surgery, trauma care, and multi-speciality healthcare services to the community of Anantapur.",
+        "title": "Sri Venkateswara Hospital",
+        "description": "Established in 2005 in Visakhapatnam, Sri Venkateswara Hospital is dedicated to delivering state-of-the-art healthcare services with excellence in care and serving with compassion.",
         "badge": "Certified Orthopedic Excellence"
       },
       "quickLinks": {
@@ -322,18 +340,18 @@
       },
       "reachOut": {
         "title": "Reach Out",
-        "address": "12-4, 80 Feet Road, Vidyuth Nagar,\nHousing Board Colony, Anantapur,\nAndhra Pradesh 515001",
+        "address": "14-1-137, Nowroji Rd, beside St. Anthony School,\nJagadamba Junction, Visakhapatnam,\nAndhra Pradesh 530002",
         "phone1": {
-          "display": "08554-245678",
-          "href": "tel:+918554245678"
+          "display": "0891-2700000",
+          "href": "tel:08912700000"
         },
         "phone2": {
-          "display": "+91 94402 75556",
-          "href": "tel:+919440275556"
+          "display": "0891-2700000",
+          "href": "tel:08912700000"
         },
         "email": {
-          "display": "info@kumarorthohospital.com",
-          "href": "mailto:info@kumarorthohospital.com"
+          "display": "info@svhospital.com",
+          "href": "mailto:info@svhospital.com"
         }
       },
       "opdTimings": {
@@ -342,7 +360,7 @@
         "sunday": "Sunday: Emergency Trauma Only"
       },
       "legal": {
-        "copyright": "Kumar's Ortho Clinic. All rights reserved.",
+        "copyright": "Sri Venkateswara Hospital. All rights reserved.",
         "links": [
           {
             "name": "Terms of Use",

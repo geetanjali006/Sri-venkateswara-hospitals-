@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -8,23 +8,23 @@ export default function Testimonials() {
   const reviews = [
     {
       name: "Ramesh Babu",
-      location: "Anantapur",
+      location: "Jagadamba Junction, Visakhapatnam",
       treatment: "Emergency Fracture Surgery",
       rating: 5,
       story:
-        "I was rushed to Kumar's Ortho Clinic late at night after a major road accident with a severe compound leg fracture. Dr. Kumar operated immediately. His calm demeanor and surgical expertise saved my limb. Six months later, I am walking completely pain-free.",
+        "I was rushed to Sri Venkateswara Hospital late at night after a major road accident with a severe compound leg fracture. Dr. S. V. Rao operated immediately. His calm demeanor and surgical expertise saved my limb. Six months later, I am walking completely pain-free.",
     },
     {
       name: "Lakshmi Devi",
-      location: "Dharmavaram",
+      location: "MVP Colony, Visakhapatnam",
       treatment: "Total Knee Replacement",
       rating: 5,
       story:
-        "My mother was suffering from severe arthritis for years. We decided to consult Dr. Kumar. The total knee replacement surgery went smoothly. The post-surgery physiotherapy staff was incredibly patient, guiding her back to mobility. Highly recommend their rehab care.",
+        "My mother was suffering from severe arthritis for years. We decided to consult Dr. S. V. Rao. The total knee replacement surgery went smoothly. The post-surgery physiotherapy staff was incredibly patient, guiding her back to mobility. Highly recommend their rehab care.",
     },
     {
       name: "Dr. K. Rajesh",
-      location: "Gooty",
+      location: "Gajuwaka, Visakhapatnam",
       treatment: "Spine Care / Disc Treatment",
       rating: 5,
       story:
@@ -32,11 +32,11 @@ export default function Testimonials() {
     },
     {
       name: "S. Rahamatullah",
-      location: "Anantapur",
+      location: "Steel Plant, Visakhapatnam",
       treatment: "Emergency Sports Trauma",
       rating: 5,
       story:
-        "My son dislocated his shoulder during an inter-school sports match. The trauma team at Kumar's Ortho Clinic was ready within minutes of our arrival. They relocated the joint under mild sedation quickly. Their responsiveness and affordable charges are highly commendable.",
+        "My son dislocated his shoulder during an inter-school sports match. The trauma team at Sri Venkateswara Hospital was ready within minutes of our arrival. They relocated the joint under mild sedation quickly. Their responsiveness and affordable charges are highly commendable.",
     },
   ];
 
@@ -59,7 +59,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="py-24 bg-gradient-to-tr from-blue-50/50 to-teal-50/50 dark:bg-zinc-950 font-sans relative overflow-hidden">
+    <section id="testimonials" className="py-24 bg-gradient-to-tr from-white via-blue-50/60 to-sky-50/60 dark:bg-zinc-950 font-sans relative overflow-hidden">
       <div className="absolute top-0 right-10 w-72 h-72 rounded-full bg-blue-500/5 blur-3xl pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -69,16 +69,16 @@ export default function Testimonials() {
           <span className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 px-3 py-1.5 rounded-md">
             Stories of Healing and Hope
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1F3A] dark:text-white mt-4 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-blue-950 dark:text-white mt-4 tracking-tight">
             Patient Stories That Inspire Us Daily
           </h2>
-          <div className="h-1 w-20 bg-blue-500 mx-auto mt-4 rounded-full" />
+          <div className="h-1 w-20 bg-gradient-to-r from-blue-600 to-sky-400 mx-auto mt-4 rounded-full" />
         </div>
 
         {/* Carousel Container */}
         <div className="max-w-4xl mx-auto relative px-4 sm:px-12">
           
-          <div className="overflow-hidden rounded-[32px] bg-white dark:bg-zinc-850 p-8 sm:p-12 border border-gray-100 dark:border-zinc-800 shadow-xl glow-navy relative">
+          <div className="overflow-hidden rounded-[32px] bg-white/90 dark:bg-zinc-850 p-8 sm:p-12 border border-blue-100 dark:border-zinc-800 shadow-xl glow-navy relative">
             <Quote className="absolute top-6 right-8 h-16 w-16 text-blue-500/10 dark:text-zinc-800/40 pointer-events-none" />
             
             <AnimatePresence mode="wait">
@@ -108,7 +108,7 @@ export default function Testimonials() {
                     {reviews[current].name.charAt(0)}
                   </div>
                   <div>
-                    <span className="block text-base font-bold text-[#0B1F3A] dark:text-white">
+                    <span className="block text-base font-bold text-blue-950 dark:text-white">
                       {reviews[current].name}
                     </span>
                     <span className="block text-xs text-gray-400">
@@ -162,7 +162,7 @@ export default function Testimonials() {
             <span>99.2% Surgical Success Rate</span>
           </span>
           <span className="h-1.5 w-1.5 rounded-full bg-gray-300" />
-          <span>Apollo Clinical Benchmarks</span>
+          <span>NABH Accredited Clinical Standards</span>
           <span className="h-1.5 w-1.5 rounded-full bg-gray-300" />
           <span>Patient-centered feedback loops</span>
         </div>

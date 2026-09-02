@@ -22,10 +22,10 @@ export default function Facilities({ data }: FacilitiesProps) {
 
         {/* Section Header */}
         <div className="mb-16 flex flex-col px-4 text-left">
-          <span className="text-[10px] font-bold uppercase tracking-widest text-gray-500 mb-6">
+          <span className="text-[10px] font-bold uppercase tracking-widest text-blue-600 bg-blue-50 dark:bg-blue-900/20 px-3 py-1.5 rounded-full w-fit mb-6">
             {data.badge}
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-serif text-[#111111] dark:text-white font-medium tracking-tight leading-[1.1] max-w-3xl mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-serif text-blue-950 dark:text-white font-medium tracking-tight leading-[1.1] max-w-3xl mb-4">
             {data.headline}
           </h2>
           <p className="text-sm sm:text-base text-gray-500 dark:text-zinc-400 max-w-2xl">
@@ -43,14 +43,13 @@ export default function Facilities({ data }: FacilitiesProps) {
               whileHover={{ y: -8 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.05 }}
-              className="group relative overflow-hidden rounded-[16px] bg-white dark:bg-zinc-900 p-8 border border-gray-200 dark:border-zinc-800 hover:border-transparent dark:hover:border-zinc-700 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between min-h-[220px] cursor-pointer"
+              className="group relative overflow-hidden rounded-[24px] bg-white/80 dark:bg-zinc-900 p-8 border border-blue-100 dark:border-zinc-800 hover:border-blue-400 dark:hover:border-blue-900/50 hover:shadow-xl transition-all duration-300 flex flex-col justify-between min-h-[220px] cursor-pointer"
             >
               {/* Card top half */}
               <div className="relative z-10">
 
-
                 {/* Title */}
-                <h3 className="text-[17px] font-bold text-[#111111] dark:text-white mb-2 leading-snug">
+                <h3 className="text-[17px] font-bold text-blue-950 dark:text-white mb-2 leading-snug">
                   {item.title}
                 </h3>
 

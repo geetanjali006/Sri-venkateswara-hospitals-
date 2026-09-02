@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -102,18 +102,18 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
             className="relative w-full max-w-lg overflow-hidden rounded-3xl bg-white shadow-2xl glow-navy dark:bg-zinc-900 border border-gray-100 dark:border-zinc-800"
           >
             {/* Header */}
-            <div className="flex items-center justify-between border-b border-gray-100 bg-navy-800 px-6 py-5 text-white dark:border-zinc-800 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-teal-500/10 blur-xl pointer-events-none" />
+            <div className="flex items-center justify-between border-b border-gray-100 bg-gradient-to-r from-blue-700 via-blue-600 to-sky-600 px-6 py-5 text-white dark:border-zinc-800 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 rounded-full bg-white/10 blur-xl pointer-events-none" />
               <div className="flex items-center gap-2 relative z-10">
-                <Calendar className="h-5 w-5 text-teal-300 animate-float" />
+                <Calendar className="h-5 w-5 text-sky-200 animate-float" />
                 <div>
                   <h3 className="text-lg font-bold tracking-tight">Schedule Consultation</h3>
-                  <p className="text-[10px] text-teal-100 uppercase tracking-widest font-semibold mt-0.5">Kumar's Ortho Clinic</p>
+                  <p className="text-[10px] text-blue-100 uppercase tracking-widest font-semibold mt-0.5">Sri Venkateswara Hospital</p>
                 </div>
               </div>
               <button
                 onClick={onClose}
-                className="rounded-full p-1.5 text-navy-200 transition-all hover:bg-navy-700 hover:text-white relative z-10"
+                className="rounded-full p-1.5 text-blue-100 transition-all hover:bg-white/10 hover:text-white relative z-10"
                 aria-label="Close modal"
               >
                 <X className="h-4.5 w-4.5" />
@@ -127,7 +127,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                   {/* Progress Line */}
                   <div className="absolute top-4 left-0 w-full h-0.5 bg-gray-200 dark:bg-zinc-700 z-0" />
                   <div 
-                    className="absolute top-4 left-0 h-0.5 bg-teal-600 dark:bg-teal-500 z-0 transition-all duration-300"
+                    className="absolute top-4 left-0 h-0.5 bg-gradient-to-r from-blue-600 to-sky-500 z-0 transition-all duration-300"
                     style={{ width: `${((step - 1) / (stepsInfo.length - 1)) * 100}%` }}
                   />
 
@@ -136,7 +136,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                       <div 
                         className={`w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 border ${
                           step >= s.num 
-                            ? "bg-teal-600 border-teal-600 text-white dark:bg-teal-500 dark:border-teal-500" 
+                            ? "bg-gradient-to-r from-blue-600 to-sky-500 border-blue-600 text-white shadow-md shadow-blue-500/20" 
                             : "bg-white border-gray-200 text-gray-400 dark:bg-zinc-800 dark:border-zinc-700"
                         }`}
                       >
@@ -175,11 +175,11 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                             Clinical Specialty
                           </label>
                           <div className="relative">
-                            <Stethoscope className="absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-teal-600" />
+                            <Stethoscope className="absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-blue-600" />
                             <select
                               value={formData.specialty}
                               onChange={(e) => setFormData({ ...formData, specialty: e.target.value })}
-                              className="w-full rounded-lg border border-gray-200 bg-gray-50 py-3 pl-10 pr-4 text-sm outline-none transition-all focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-100 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white dark:focus:border-teal-500 dark:focus:ring-teal-900/30 appearance-none"
+                              className="w-full rounded-lg border border-gray-200 bg-gray-50 py-3 pl-10 pr-4 text-sm outline-none transition-all focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-100 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white dark:focus:border-blue-500 dark:focus:ring-blue-900/30 appearance-none"
                             >
                               <option value="Orthopedics">Orthopedics & Spine Care</option>
                               <option value="General Medicine">General & Preventive Medicine</option>
@@ -200,7 +200,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                             min={new Date().toISOString().split("T")[0]}
                             value={formData.date}
                             onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                            className="w-full rounded-lg border border-gray-200 bg-gray-50 py-3 px-3 text-sm outline-none transition-all focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-100 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white dark:focus:border-teal-500"
+                            className="w-full rounded-lg border border-gray-200 bg-gray-50 py-3 px-3 text-sm outline-none transition-all focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-100 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white dark:focus:border-blue-500"
                           />
                         </div>
 
@@ -217,7 +217,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                                 onClick={() => setFormData({ ...formData, time: slot })}
                                 className={`flex items-center justify-center gap-1.5 rounded-lg border py-2.5 text-xs font-bold transition-all ${
                                   formData.time === slot
-                                    ? "border-teal-600 bg-teal-50 text-teal-800 dark:border-teal-500 dark:bg-teal-900/20 dark:text-teal-400"
+                                    ? "border-blue-600 bg-blue-50 text-blue-800 dark:border-blue-500 dark:bg-blue-900/20 dark:text-blue-400"
                                     : "border-gray-200 bg-white text-gray-600 hover:bg-gray-50 dark:border-zinc-800 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-700"
                                 }`}
                               >
@@ -248,14 +248,14 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                             Patient Full Name <span className="text-red-500">*</span>
                           </label>
                           <div className="relative">
-                            <User className="absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-teal-600" />
+                            <User className="absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-blue-600" />
                             <input
                               type="text"
                               required
                               placeholder="Jane Doe"
                               value={formData.name}
                               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                              className="w-full rounded-lg border border-gray-200 bg-gray-50 py-3 pl-10 pr-4 text-sm outline-none transition-all focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-100 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white dark:focus:border-teal-500"
+                              className="w-full rounded-lg border border-gray-200 bg-gray-50 py-3 pl-10 pr-4 text-sm outline-none transition-all focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-100 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white dark:focus:border-blue-500"
                             />
                           </div>
                         </div>
@@ -266,7 +266,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                             Contact Phone Number <span className="text-red-500">*</span>
                           </label>
                           <div className="relative">
-                            <Phone className="absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-teal-600" />
+                            <Phone className="absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-blue-600" />
                             <input
                               type="tel"
                               required
@@ -274,7 +274,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                               placeholder="10-digit mobile number"
                               value={formData.phone}
                               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                              className="w-full rounded-lg border border-gray-200 bg-gray-50 py-3 pl-10 pr-4 text-sm outline-none transition-all focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-100 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white dark:focus:border-teal-500"
+                              className="w-full rounded-lg border border-gray-200 bg-gray-50 py-3 pl-10 pr-4 text-sm outline-none transition-all focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-100 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white dark:focus:border-blue-500"
                             />
                           </div>
                         </div>
@@ -289,7 +289,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                             placeholder="Brief description of bone, joint, or other medical symptoms..."
                             value={formData.message}
                             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                            className="w-full rounded-lg border border-gray-200 bg-gray-50 p-3 text-sm outline-none transition-all focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-100 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white dark:focus:border-teal-500 resize-none"
+                            className="w-full rounded-lg border border-gray-200 bg-gray-50 p-3 text-sm outline-none transition-all focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-100 dark:border-zinc-800 dark:bg-zinc-800 dark:text-white dark:focus:border-blue-500 resize-none"
                           />
                         </div>
                       </motion.div>
@@ -303,9 +303,9 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                         exit={{ opacity: 0, x: 10 }}
                         className="space-y-4"
                       >
-                        <div className="rounded-2xl border border-teal-100 bg-teal-50/30 p-5 dark:border-teal-900/20 dark:bg-teal-950/10">
-                          <h4 className="text-xs font-bold text-teal-800 dark:text-teal-400 uppercase tracking-widest mb-3 flex items-center gap-1.5">
-                            <ShieldCheck className="w-4.5 h-4.5" />
+                        <div className="rounded-2xl border border-blue-100 bg-blue-50/50 p-5 dark:border-blue-900/20 dark:bg-blue-950/10">
+                          <h4 className="text-xs font-bold text-blue-800 dark:text-blue-400 uppercase tracking-widest mb-3 flex items-center gap-1.5">
+                            <ShieldCheck className="w-4.5 h-4.5 text-blue-600" />
                             <span>Verify Consultation Summary</span>
                           </h4>
 
@@ -320,7 +320,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                             </div>
                             <div className="flex justify-between border-b border-gray-100/50 pb-2 dark:border-zinc-800/50">
                               <span className="text-gray-400 text-xs">Clinical Specialty</span>
-                              <span className="font-bold text-teal-600 dark:text-teal-400">{formData.specialty}</span>
+                              <span className="font-bold text-blue-600 dark:text-blue-400">{formData.specialty}</span>
                             </div>
                             <div className="flex justify-between border-b border-gray-100/50 pb-2 dark:border-zinc-800/50">
                               <span className="text-gray-400 text-xs">Consultation Date</span>
@@ -370,7 +370,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                       <button
                         type="button"
                         onClick={handleNext}
-                        className="flex-[2] flex items-center justify-center gap-1.5 rounded-xl bg-teal-600 py-3 text-sm font-bold text-white shadow-lg shadow-teal-600/20 transition-all hover:bg-teal-700 active:scale-98"
+                        className="flex-[2] flex items-center justify-center gap-1.5 rounded-xl bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 py-3 text-sm font-bold text-white shadow-lg shadow-blue-500/20 transition-all active:scale-98"
                       >
                         <span>Next Step</span>
                         <ChevronRight className="h-4 w-4" />
@@ -379,7 +379,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                       <button
                         onClick={handleSubmit}
                         disabled={isSubmitting}
-                        className="flex-[2] rounded-xl bg-teal-600 py-3 text-sm font-bold text-white shadow-lg shadow-teal-600/20 transition-all hover:bg-teal-700 active:scale-98 disabled:opacity-50"
+                        className="flex-[2] rounded-xl bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 py-3 text-sm font-bold text-white shadow-lg shadow-blue-500/20 transition-all active:scale-98 disabled:opacity-50"
                       >
                         {isSubmitting ? "Generating Slot..." : "Confirm & Send Request"}
                       </button>
@@ -397,9 +397,9 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                    className="mb-4 rounded-full bg-emerald-50 p-4 dark:bg-emerald-950/20 text-emerald-600"
+                    className="mb-4 rounded-full bg-blue-50 p-4 dark:bg-blue-950/20 text-blue-600"
                   >
-                    <CheckCircle className="h-14 w-14 text-emerald-600 dark:text-emerald-400" />
+                    <CheckCircle className="h-14 w-14 text-blue-600 dark:text-blue-400" />
                   </motion.div>
                   <h4 className="text-xl font-black text-gray-900 dark:text-white mb-2">OPD Request Confirmed!</h4>
                   <p className="max-w-xs text-xs text-gray-500 dark:text-zinc-400 mb-6 leading-relaxed">
@@ -408,7 +408,7 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
                   </p>
                   <button
                     onClick={handleReset}
-                    className="w-full max-w-[200px] rounded-xl bg-navy-800 py-3 text-sm font-bold text-white transition-all hover:bg-navy-900 dark:bg-teal-600 dark:hover:bg-teal-700 active:scale-98"
+                    className="w-full max-w-[200px] rounded-xl bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 py-3 text-sm font-bold text-white transition-all shadow-md active:scale-98"
                   >
                     Back to Home
                   </button>

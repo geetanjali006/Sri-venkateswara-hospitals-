@@ -48,7 +48,7 @@ export default function Contact({ data }: ContactProps) {
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Kumar's Ortho Clinic Google Map"
+                title="Sri Venkateswara Hospital Google Map"
                 className="transition-transform duration-700 group-hover:scale-[1.01]"
               ></iframe>
               
@@ -100,26 +100,26 @@ export default function Contact({ data }: ContactProps) {
             </div>
 
             {/* Consulting Hours & Direct Phone/WhatsApp Anchors */}
-            <div className="bg-[#0B1F3A] text-white p-6 sm:p-8 rounded-[32px] border border-navy-800 shadow-lg flex flex-col justify-between gap-6">
+            <div className="bg-gradient-to-br from-[#061830] via-[#0a2540] to-[#0f3a65] text-white p-6 sm:p-8 rounded-[32px] border border-blue-900/50 shadow-lg flex flex-col justify-between gap-6">
               
               <div className="space-y-4">
                 <div className="flex gap-3 items-start">
-                  <Clock className="h-5 w-5 text-teal-400 mt-0.5 flex-shrink-0" />
+                  <Clock className="h-5 w-5 text-sky-400 mt-0.5 flex-shrink-0" />
                   <div>
-                    <span className="text-xs font-bold text-teal-400 uppercase tracking-widest block mb-1">{data.infoCard.hoursTitle}</span>
+                    <span className="text-xs font-bold text-sky-300 uppercase tracking-widest block mb-1">{data.infoCard.hoursTitle}</span>
                     <span className="text-sm font-bold block">{data.infoCard.hoursDesc}</span>
-                    <span className="text-xs text-red-300 font-semibold block mt-1">â—  {data.infoCard.hoursEmergency}</span>
+                    <span className="text-xs text-cyan-300 font-semibold block mt-1">• {data.infoCard.hoursEmergency}</span>
                   </div>
                 </div>
 
-                <div className="flex gap-3 items-start border-t border-navy-800 pt-4">
-                  <Phone className="h-5 w-5 text-teal-400 mt-0.5 flex-shrink-0" />
+                <div className="flex gap-3 items-start border-t border-blue-900/50 pt-4">
+                  <Phone className="h-5 w-5 text-sky-400 mt-0.5 flex-shrink-0" />
                   <div>
-                    <span className="text-xs font-bold text-teal-400 uppercase tracking-widest block mb-1">{data.infoCard.phoneTitle}</span>
-                    <a href={data.infoCard.phone1Link} className="text-sm font-bold block hover:text-teal-300 transition-colors">
+                    <span className="text-xs font-bold text-sky-300 uppercase tracking-widest block mb-1">{data.infoCard.phoneTitle}</span>
+                    <a href={data.infoCard.phone1Link} className="text-sm font-bold block hover:text-sky-300 transition-colors">
                       {data.infoCard.phone1Text}
                     </a>
-                    <a href={data.infoCard.phone2Link} className="text-sm font-bold block hover:text-teal-300 transition-colors mt-0.5">
+                    <a href={data.infoCard.phone2Link} className="text-sm font-bold block hover:text-sky-300 transition-colors mt-0.5">
                       {data.infoCard.phone2Text}
                     </a>
                   </div>
@@ -130,7 +130,7 @@ export default function Contact({ data }: ContactProps) {
                 href={data.infoCard.whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-3 px-4 shadow-md transition-colors"
+                className="flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-600 hover:to-cyan-600 text-white font-bold text-xs py-3 px-4 shadow-md transition-colors"
               >
                 <MessageSquare className="h-4 w-4 fill-white stroke-none" />
                 <span>{data.infoCard.whatsappBtn}</span>

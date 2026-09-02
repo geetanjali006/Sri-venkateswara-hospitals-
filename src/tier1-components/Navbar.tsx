@@ -50,17 +50,17 @@ export default function Navbar({ onOpenBooking, data }: NavbarProps) {
         isScrolled ? "opacity-0" : "opacity-100"
       )}></div>
 
-      {/* Left Navigation Items */}
-      <nav className="hidden lg:flex items-center gap-1.5 xl:gap-2 relative z-10 pointer-events-auto max-w-[40vw] flex-wrap justify-start">
+      {/* Left Navigation Items - Forced single row */}
+      <nav className="hidden lg:flex items-center gap-1 xl:gap-2 relative z-10 pointer-events-auto flex-nowrap justify-start max-w-[44vw] xl:max-w-[46vw]">
         {navLinks?.map((link: any) => (
           <a
             key={link.name}
             href={link.href}
             className={cn(
-              "px-3 py-1.5 xl:px-4 xl:py-2 rounded-full border text-xs xl:text-sm font-semibold transition-colors backdrop-blur-sm shadow-sm whitespace-nowrap",
+              "px-2.5 py-1.5 xl:px-3.5 xl:py-2 rounded-full border text-[11px] xl:text-xs font-bold transition-all backdrop-blur-md shadow-sm whitespace-nowrap shrink-0",
               isScrolled 
                 ? "border-black/10 text-gray-800 hover:bg-black/5" 
-                : "border-white/40 text-white hover:bg-white/10"
+                : "border-white/35 text-white hover:bg-white/15 hover:border-white/60"
             )}
           >
             {link.name}
@@ -70,13 +70,20 @@ export default function Navbar({ onOpenBooking, data }: NavbarProps) {
 
       {/* Center Logo Cutout */}
       <div className="absolute left-1/2 -translate-x-1/2 top-0 z-20">
-        <div className="navbar-cutout px-6 sm:px-10 pt-2 pb-4 pointer-events-auto flex justify-center items-center shadow-sm">
-          <a href="#home" className="flex items-center group">
+        <div className="navbar-cutout px-5 sm:px-8 pt-2 pb-3 pointer-events-auto flex justify-center items-center shadow-md bg-white">
+          <a href="#home" className="flex items-center gap-2.5 group">
             <img
-              src="/logo.png"
-              alt="Kumar's Ortho Clinic"
-              className="h-10 sm:h-12 w-auto object-contain hover:scale-[1.03] transition-transform duration-300"
+              src="/sv-icon.png"
+              alt="Sri Venkateswara Hospital"
+              className="h-10 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300 filter drop-shadow-sm"
             />
+            <div className="flex flex-col text-left leading-none">
+              <span className="text-[10px] font-semibold text-teal-600 tracking-wider font-serif italic">Sri</span>
+              <span className="text-xs sm:text-sm font-extrabold text-[#061830] tracking-tight whitespace-nowrap">
+                VENKATESWARA
+              </span>
+              <span className="text-[9px] font-bold text-blue-700 tracking-widest uppercase mt-0.5">HOSPITAL</span>
+            </div>
           </a>
         </div>
       </div>
@@ -105,15 +112,11 @@ export default function Navbar({ onOpenBooking, data }: NavbarProps) {
         <button
           onClick={onOpenBooking}
           className={cn(
-            "hidden lg:flex items-center gap-3 rounded-full px-6 py-2.5 text-sm font-bold shadow-xl hover:scale-105 active:scale-95 transition-all group",
-            isScrolled ? "bg-black text-white hover:bg-black/80" : "bg-black text-white hover:bg-black/80"
+            "hidden lg:flex items-center gap-3 rounded-full px-6 py-2.5 text-sm font-bold shadow-xl hover:scale-105 active:scale-95 transition-all group bg-gradient-to-r from-blue-600 via-blue-500 to-sky-500 text-white hover:from-blue-700 hover:to-sky-600"
           )}
         >
           <span>Book Now</span>
-          <div className={cn(
-            "p-1 rounded-full group-hover:rotate-45 transition-transform",
-            isScrolled ? "bg-white text-black" : "bg-white text-black"
-          )}>
+          <div className="p-1 rounded-full bg-white text-blue-600 group-hover:rotate-45 transition-transform">
             <ArrowRight className="h-4 w-4" />
           </div>
         </button>
@@ -123,7 +126,7 @@ export default function Navbar({ onOpenBooking, data }: NavbarProps) {
           onClick={() => setIsOpen(!isOpen)}
           className={cn(
             "rounded-full p-3 shadow-xl transition-all hover:scale-105",
-            isScrolled ? "bg-black text-white hover:bg-black/80" : "bg-black text-white hover:bg-black/80"
+            isScrolled ? "bg-blue-900 text-white hover:bg-blue-800" : "bg-blue-950 text-white hover:bg-blue-900"
           )}
           aria-label="Toggle menu"
         >
@@ -133,14 +136,14 @@ export default function Navbar({ onOpenBooking, data }: NavbarProps) {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="absolute top-full left-4 right-4 mt-2 rounded-2xl bg-white/95 backdrop-blur-md shadow-2xl border border-gray-200 flex flex-col p-4 lg:hidden pointer-events-auto z-50">
+        <div className="absolute top-full left-4 right-4 mt-2 rounded-2xl bg-white/95 backdrop-blur-md shadow-2xl border border-blue-100 flex flex-col p-4 lg:hidden pointer-events-auto z-50">
           <nav className="flex flex-col">
             {navLinks?.map((link: any) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="py-3 border-b border-gray-100 text-sm font-bold uppercase tracking-wider text-[#0B1F3A] hover:text-[#B24E39] text-center"
+                className="py-3 border-b border-gray-100 text-sm font-bold uppercase tracking-wider text-blue-950 hover:text-blue-600 text-center"
               >
                 {link.name}
               </a>
