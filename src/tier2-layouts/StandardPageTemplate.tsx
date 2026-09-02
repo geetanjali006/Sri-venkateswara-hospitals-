@@ -21,10 +21,6 @@ interface StandardPageTemplateProps {
 
 export default function StandardPageTemplate({ content }: StandardPageTemplateProps) {
   const [loading, setLoading] = useState(true);
-  const [isBookingOpen, setIsBookingOpen] = useState(false);
-
-  const openBooking = () => setIsBookingOpen(true);
-  const closeBooking = () => setIsBookingOpen(false);
 
   if (loading) {
     return <Preloader onComplete={() => setLoading(false)} />;
@@ -36,12 +32,12 @@ export default function StandardPageTemplate({ content }: StandardPageTemplatePr
       <div className="fixed inset-0 bg-transparent medical-grid pointer-events-none z-0" />
 
       {/* Sticky Navigation bar */}
-      <Navbar onOpenBooking={openBooking} data={content.layout.navbar} />
+      <Navbar onOpenBooking={() => { }} data={content.layout.navbar} />
 
       <main className="flex-1">
-        {content.layout.hero && <HeroLayout onOpenBooking={openBooking} data={content.layout.hero} />}
-        {content.layout.services && <ServicesLayout onOpenBooking={openBooking} data={content.layout.services} />}
-        {content.layout.doctor && <DoctorLayout onOpenBooking={openBooking} data={content.layout.doctor} />}
+        {content.layout.hero && <HeroLayout onOpenBooking={() => { }} data={content.layout.hero} />}
+        {content.layout.services && <ServicesLayout onOpenBooking={() => { }} data={content.layout.services} />}
+        {content.layout.doctor && <DoctorLayout onOpenBooking={() => { }} data={content.layout.doctor} />}
         {content.layout.whyChooseUs && <WhyChooseUsLayout data={content.layout.whyChooseUs} />}
         {content.layout.facilities && <FacilitiesLayout data={content.layout.facilities} />}
         {content.layout.booking && <AppointmentBookingLayout data={content.layout.booking} />}
@@ -50,12 +46,7 @@ export default function StandardPageTemplate({ content }: StandardPageTemplatePr
       </main>
 
       <Footer data={content.layout.footer} />
-      <EmergencyFloating onOpenBooking={openBooking} />
-
-      <AppointmentModal 
-        isOpen={isBookingOpen} 
-        onClose={closeBooking} 
-      />
+      <EmergencyFloating />
     </div>
   );
 }

@@ -10,7 +10,7 @@ interface NavbarProps {
   data: any;
 }
 
-export default function Navbar({ onOpenBooking, data }: NavbarProps) {
+export default function Navbar({ data }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -37,13 +37,13 @@ export default function Navbar({ onOpenBooking, data }: NavbarProps) {
   const navLinks = data.links;
 
   return (
-    <header 
+    <header
       className={cn(
         "fixed top-0 left-0 right-0 z-[100] flex justify-between items-center px-4 sm:px-10 h-20 sm:h-24 transition-all duration-500 pointer-events-none",
         isScrolled ? "glass-nav" : "bg-transparent"
       )}
     >
-      
+
       {/* Top White Border Bar */}
       <div className={cn(
         "absolute top-0 left-0 right-0 h-3 bg-white pointer-events-auto z-0 transition-opacity",
@@ -58,8 +58,8 @@ export default function Navbar({ onOpenBooking, data }: NavbarProps) {
             href={link.href}
             className={cn(
               "px-2.5 py-1.5 xl:px-3.5 xl:py-2 rounded-full border text-[11px] xl:text-xs font-bold transition-all backdrop-blur-md shadow-sm whitespace-nowrap shrink-0",
-              isScrolled 
-                ? "border-black/10 text-gray-800 hover:bg-black/5" 
+              isScrolled
+                ? "border-black/10 text-gray-800 hover:bg-black/5"
                 : "border-white/35 text-white hover:bg-white/15 hover:border-white/60"
             )}
           >
@@ -90,7 +90,7 @@ export default function Navbar({ onOpenBooking, data }: NavbarProps) {
 
       {/* Right Actions */}
       <div className="flex items-center gap-2 sm:gap-3 relative z-10 pointer-events-auto ml-auto">
-        
+
         {/* Search Placeholder */}
         <div className={cn(
           "hidden lg:flex items-center backdrop-blur-md rounded-full px-4 py-2 shadow-sm transition-colors border",
@@ -104,13 +104,13 @@ export default function Navbar({ onOpenBooking, data }: NavbarProps) {
             "rounded-full p-1 shadow-sm transition-colors",
             isScrolled ? "bg-black text-white" : "bg-white text-black"
           )}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><path d="m21 21-4.3-4.3" /></svg>
           </div>
         </div>
 
         {/* Book Now Button */}
-        <button
-          onClick={onOpenBooking}
+        <a
+          href="/consultation"
           className={cn(
             "hidden lg:flex items-center gap-3 rounded-full px-6 py-2.5 text-sm font-bold shadow-xl hover:scale-105 active:scale-95 transition-all group bg-gradient-to-r from-blue-600 via-blue-500 to-sky-500 text-white hover:from-blue-700 hover:to-sky-600"
           )}
@@ -119,7 +119,7 @@ export default function Navbar({ onOpenBooking, data }: NavbarProps) {
           <div className="p-1 rounded-full bg-white text-blue-600 group-hover:rotate-45 transition-transform">
             <ArrowRight className="h-4 w-4" />
           </div>
-        </button>
+        </a>
 
         {/* Mobile / Hamburger Menu Toggle */}
         <button

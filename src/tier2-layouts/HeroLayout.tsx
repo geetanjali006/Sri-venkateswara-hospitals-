@@ -8,7 +8,7 @@ interface HeroProps {
   data: any;
 }
 
-export default function Hero({ onOpenBooking, data }: HeroProps) {
+export default function Hero({ data }: HeroProps) {
   return (
     <section
       id="home"
@@ -16,7 +16,7 @@ export default function Hero({ onOpenBooking, data }: HeroProps) {
     >
       {/* Background Image Container */}
       <div className="absolute inset-x-3 inset-y-3 sm:inset-x-6 sm:inset-y-3 lg:bottom-6 z-0 rounded-[32px] overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center sm:bg-right bg-no-repeat transition-transform duration-1000 hover:scale-[1.01]"
           style={{ backgroundImage: "url('/hero_bg.png')" }}
         >
@@ -66,15 +66,15 @@ export default function Hero({ onOpenBooking, data }: HeroProps) {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-8 sm:mt-10"
           >
-            <button
-              onClick={onOpenBooking}
+            <a
+              href="/consultation"
               className="flex items-center justify-center gap-3 rounded-full bg-white hover:bg-blue-50 px-8 py-3.5 text-[15px] font-bold text-blue-950 shadow-2xl hover:scale-[1.02] active:scale-98 transition-all group"
             >
               <span>{data.cta}</span>
               <div className="bg-gradient-to-r from-blue-600 to-sky-500 text-white p-1.5 rounded-full group-hover:translate-x-1 transition-transform">
                 <ArrowRight className="h-4 w-4" />
               </div>
-            </button>
+            </a>
           </motion.div>
         </motion.div>
       </div>

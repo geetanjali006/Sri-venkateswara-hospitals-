@@ -16,7 +16,7 @@ interface ServicesProps {
   data: any;
 }
 
-export default function Services({ onOpenBooking, data }: ServicesProps) {
+export default function Services({ data }: ServicesProps) {
   const specialties = data.specialties;
 
   return (
@@ -55,11 +55,11 @@ export default function Services({ onOpenBooking, data }: ServicesProps) {
                 className="group relative h-[320px] sm:h-[360px] rounded-[32px] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 cursor-pointer flex flex-col justify-end p-6 border border-blue-50/50"
               >
                 {/* Background Image */}
-                <div 
+                <div
                   className="absolute inset-0 bg-cover bg-center z-0 transition-transform duration-700 group-hover:scale-110"
                   style={{ backgroundImage: `url(${spec.image})` }}
                 />
-                
+
                 {/* Dark Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent z-10" />
 
@@ -84,12 +84,12 @@ export default function Services({ onOpenBooking, data }: ServicesProps) {
             {data.ctaHeadline}
           </h3>
 
-          <button
-            onClick={onOpenBooking}
-            className="bg-white text-blue-950 hover:bg-blue-50 font-bold text-sm px-8 py-3.5 rounded-xl transition-all duration-300 shadow-md hover:scale-105 relative z-10"
+          <a
+            href="/consultation"
+            className="bg-white text-blue-950 hover:bg-blue-50 font-bold text-sm px-8 py-3.5 rounded-xl transition-all duration-300 shadow-md hover:scale-105 relative z-10 block w-fit"
           >
             {data.ctaButton}
-          </button>
+          </a>
         </div>
       </div>
     </section>

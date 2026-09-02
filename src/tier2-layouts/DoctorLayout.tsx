@@ -7,7 +7,7 @@ interface DoctorProps {
   data: any;
 }
 
-export default function Doctor({ onOpenBooking, data }: DoctorProps) {
+export default function Doctor({ data }: DoctorProps) {
   const doctors = data.doctors;
 
   return (
@@ -80,12 +80,12 @@ export default function Doctor({ onOpenBooking, data }: DoctorProps) {
                 </div>
 
                 {/* Hollow Pill Button */}
-                <button
-                  onClick={onOpenBooking}
-                  className="w-full py-3 rounded-full border border-blue-900 dark:border-zinc-700 text-[13px] font-bold text-blue-950 dark:text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-sky-500 hover:border-blue-600 hover:text-white dark:hover:text-white hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+                <a
+                  href="/consultation"
+                  className="w-full py-3 rounded-full border border-blue-900 dark:border-zinc-700 text-[13px] font-bold text-blue-950 dark:text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-sky-500 hover:border-blue-600 hover:text-white dark:hover:text-white hover:-translate-y-1 hover:shadow-lg transition-all duration-300 block text-center"
                 >
                   {data.ctaButton}
-                </button>
+                </a>
               </motion.div>
             ))}
           </div>

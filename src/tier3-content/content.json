@@ -222,8 +222,8 @@
         "badge": "Direct Care Line",
         "headline": "Book Instantly via Call",
         "subtext": "Skip the form entirely! Speak directly with our scheduling assistant at our front desk to book and verify slots.",
-        "button": "Call Desk Instantly",
-        "link": "tel:08912700000"
+        "button": "Open Consultation Form",
+        "link": "/consultation"
       },
       "assurances": {
         "title": "Clinical Assurances",
@@ -289,8 +289,8 @@
         "phone1Link": "tel:08912700000",
         "phone2Text": "Emergency: 0891-2700000",
         "phone2Link": "tel:08912700000",
-        "whatsappBtn": "Call Hospital Helpline",
-        "whatsappLink": "tel:08912700000"
+        "whatsappBtn": "Open Consultation Form",
+        "whatsappLink": "/consultation"
       }
     },
     "footer": {
